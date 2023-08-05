@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud Toko Buku</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background: #f5f7fa; color: #404e67">
+    <div class="header">
+      <h2>Crud APP Toko Buku</h2>
+    </div>
+    <div class="content-container">
+      <div class="input-buku">
+        <h3>Form Tambah Buku</h3>
+        <form action="/api/v1/buku" method="post" class="form" id="form">
+          <label for="">Judul Buku</label>
+          <input type="text" name="judul" id="judul" />
+          <label for="">Penerbit</label>
+          <input type="text" name="penerbit"  id="penerbit"/>
+          <label for="">Genre Buku</label>
+          <input type="text" name="genreBuku"id="genreBuku" />
+          <label for="">Harga Buku</label>
+          <input type="text" name="hargaBuku" id="hargaBuku" />
+          <button id="btnSubmit" type="submit">Tambah Buku</button>
+        </form>
+       
+      </div>
+
+      <div class="table-wrapper">
+        <div class="tampilan">
+          <h3>Tabel Daftar Buku</h3>
+        </div>
+        <table class="table">
+          <thead>
+            <tr class="row">
+              <th>No</th>
+              <th>Judul Buku</th>
+              <th>Penerbit Buku</th>
+              <th>Genre Buku</th>
+              <th>Harga Buku</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row-body">
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td ><button class="btn-delete">Delete</button> <button class="btn-edit">Edit</button></td>
+            </tr>
+            <tr class="row-body">
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td ><button class="btn-delete">Delete</button> <button class="btn-edit">Edit</button></td>
+            </tr> <tr class="row-body">
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td ><button class="btn-delete">Delete</button> <button class="btn-edit">Edit</button></td>
+            </tr> <tr class="row-body">
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td ><button class="btn-delete">Delete</button> <button class="btn-edit">Edit</button></td>
+            </tr> <tr class="row-body">
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td ><button class="btn-delete">Delete</button> <button class="btn-edit">Edit</button></td>
+            </tr> <tr class="row-body">
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td ><button class="btn-delete">Delete</button> <button class="btn-edit">Edit</button></td>
+            </tr> <tr class="row-body">
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td ><button class="btn-delete">Delete</button> <button class="btn-edit">Edit</button></td>
+            </tr> <tr class="row-body">
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td id="td"></td>
+              <td ><button class="btn-delete">Delete</button> <button class="btn-edit">Edit</button></td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./button.js"></script>
+  </body>
+</html>
